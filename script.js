@@ -17,7 +17,7 @@ updateClock(); // Initial call
 
 // Create and populate image gallery
 const gallery = document.getElementById('imageGallery');
-const imageCount = 28;
+const imageCount = 14;
 
 // Create double set of images for smooth infinite scroll
 for (let i = 0; i < 4; i++) {

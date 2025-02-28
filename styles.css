@@ -84,7 +84,7 @@ main {
     display: flex;
     gap: 20px;
     padding: 0 40px;
-    animation: scroll 30s linear infinite;
+    animation: scroll 60s linear infinite;
     will-change: transform;
 }
 
@@ -110,7 +110,7 @@ main {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-75%);
     }
 }
 
