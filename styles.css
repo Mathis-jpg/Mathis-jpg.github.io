@@ -84,7 +84,7 @@ main {
     display: flex;
     gap: 20px;
     padding: 0 40px;
-    animation: scroll 60s linear infinite;
+    animation: scroll 30s linear infinite;
     will-change: transform;
 }
 
