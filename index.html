@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Fifteen Sideschool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="LOGO/logo.svg" alt="Logo" class="logo">
+            <div class="location">BASED IN PARIS — FR</div>
+        </div>
+        <div class="header-right">
+            <div class="time" id="clock"></div>
+            <button class="info-btn">INFO</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="title-top">THIS IS</div>
+        
+        <div class="gallery-container">
+            <div class="gallery" id="imageGallery">
+                <!-- Images will be added dynamically via JavaScript -->
+            </div>
+        </div>
+
+        <div class="title-bottom">CHALLENGE FIFTEEN</div>
+    </main>
+
+    <footer>
+        <div class="copyright">©2025 MATHIS</div>
+    </footer>
+
+    <!-- Modal for image popup -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Modal for info popup -->
+    <div class="modal" id="infoModal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content info-content">
+            <p>You're looking at Challenge Fifteen - the grand finale of our AI adventure! While the first fourteen challenges pushed the boundaries of AI, this website itself is the 15th challenge. Pretty meta?</p>
+            <br>
+            <img src="LOGO/logo.svg" alt="Logo" class="logo">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
