@@ -19,16 +19,36 @@ updateClock(); // Initial call
 const gallery = document.getElementById('imageGallery');
 const imageCount = 14;
 
-// Create double set of images for smooth infinite scroll
+// Create top row (images 1-7) scrolling left
+const topRow = document.createElement('div');
+topRow.className = 'gallery-row scroll-left';
 for (let i = 0; i < 4; i++) {
-    for (let j = 1; j <= imageCount; j++) {
+    for (let j = 1; j <= 7; j++) {
         const img = document.createElement('img');
         img.src = `TRAE PICTURES/image ${j}.png`;
         img.alt = `Challenge ${j}`;
         img.dataset.index = j;
-        gallery.appendChild(img);
+        topRow.appendChild(img);
     }
 }
+
+// Create bottom row (images 8-14) scrolling right
+const bottomRow = document.createElement('div');
+bottomRow.className = 'gallery-row scroll-right';
+for (let i = 0; i < 4; i++) {
+    for (let j = 8; j <= 14; j++) {
+        const img = document.createElement('img');
+        img.src = `TRAE PICTURES/image ${j}.png`;
+        img.alt = `Challenge ${j}`;
+        img.dataset.index = j;
+        bottomRow.appendChild(img);
+    }
+}
+
+// Add rows to gallery
+gallery.appendChild(topRow);
+gallery.appendChild(bottomRow);
+
 
 // Modal functionality
 const imageModal = document.getElementById('imageModal');
