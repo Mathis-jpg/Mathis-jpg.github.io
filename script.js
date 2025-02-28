@@ -20,7 +20,7 @@ const gallery = document.getElementById('imageGallery');
 const imageCount = 14;
 
 // Create double set of images for smooth infinite scroll
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 4; i++) {
     for (let j = 1; j <= imageCount; j++) {
         const img = document.createElement('img');
         img.src = `TRAE PICTURES/image ${j}.png`;
